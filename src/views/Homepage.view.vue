@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'HomepageView',
+    name: 'HomepageView',
 };
 </script>
