@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+.tools/eslint/.cache/**/*
+.tools/stylelint/.cache/**/*

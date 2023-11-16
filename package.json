@@ -10,8 +10,10 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint && stylelint **/*.{css,scss,vue}",
-        "format": "eslint --fix --ext .js,.vue ./"
+        "code:eslint": "eslint --ext .js,.html,.vue src/ --c .tools/eslint/.eslintrc.js --cache --cache-location .tools/eslint/.cache/",
+        "scss:lint": "stylelint src/ --config .tools/stylelint/stylelintrc.json --cache --cache-location .tools/stylelint/.cache/ --ignore-path .tools/stylelint/.stylelintignore",
+        "code:lint": "npm run code:eslint && npm run scss:lint",
+        "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix"
     },
     "dependencies": {
         "sass": "^1.69.3",

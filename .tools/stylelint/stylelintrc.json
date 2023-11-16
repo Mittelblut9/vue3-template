@@ -9,7 +9,7 @@
       "files": ["*.vue", "**/*.vue"],
       "extends": [
         "stylelint-config-standard-scss",
-        "stylelint-config-standard-vue/scss"
+        "stylelint-config-recommended-vue"
       ]
     }
   ],
@@ -24,5 +24,5 @@
     "selector-class-pattern": null,
     "declaration-block-single-line-max-declarations": null
   },
-  "ignoreFiles": ["node_modules/**/*", "dist/**/*"]
+  "ignoreFiles": ["node_modules/**/*", "dist/**/*", "*.js"]
 }
