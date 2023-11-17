@@ -3,43 +3,47 @@
   "author": {
     "name": "BlackDayz",
     "email": "info@blackdayz.de"
-    },
-    "license": "GPL-3.0-or-later",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "code:eslint": "eslint --ext .js,.html,.vue src/ --c .tools/eslint/.eslintrc.js --cache --cache-location .tools/eslint/.cache/",
-        "scss:lint": "stylelint src/ --config .tools/stylelint/stylelintrc.json --cache --cache-location .tools/stylelint/.cache/ --ignore-path .tools/stylelint/.stylelintignore",
-        "code:lint": "npm run code:eslint && npm run scss:lint",
-        "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix"
-    },
-    "dependencies": {
-        "sass": "^1.69.3",
-        "stylelint-scss": "^5.2.1",
-        "vue": "^3.2.13",
-        "vue-router": "^4.0.3",
-        "vue3-ytframe": "^0.4.0",
-        "vuex": "^4.0.0"
-    },
-    "devDependencies": {
-        "@vue/cli-plugin-eslint": "~5.0.0",
-        "@vue/cli-plugin-router": "~5.0.0",
-        "@vue/cli-plugin-vuex": "~5.0.0",
-        "@vue/cli-service": "~5.0.0",
-        "eslint": "^8.51.0",
-        "eslint-plugin-vue": "^9.17.0",
-        "lint-staged": "^14.0.1",
-        "node-sass": "^9.0.0",
-        "postcss-html": "^1.5.0",
-        "sass-loader": "^13.3.2",
-        "stylelint": "^15.10.3",
-        "stylelint-config-standard": "^34.0.0",
-        "stylelint-config-standard-scss": "^11.0.0",
-        "stylelint-config-standard-vue": "^1.0.0"
-    },
-    "gitHooks": {
-        "pre-commit": "lint-staged"
-    }
+  },
+  "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "code:eslint": "eslint --ext .js,.html,.vue src/ --c .tools/eslint/.eslintrc.js --cache --cache-location .tools/eslint/.cache/",
+    "scss:lint": "stylelint src/ --config .tools/stylelint/stylelintrc.json --cache --cache-location .tools/stylelint/.cache/ --ignore-path .tools/stylelint/.stylelintignore",
+    "code:lint": "npm run code:eslint && npm run scss:lint",
+    "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix",
+    "start:dev": "npm run serve"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-vue-next": "^0.14.10",
+    "sass": "^1.69.3",
+    "stylelint-scss": "^5.2.1",
+    "unplugin-vue-components": "^0.25.2",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vue3-ytframe": "^0.4.0",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^8.51.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "lint-staged": "^14.0.1",
+    "node-sass": "^9.0.0",
+    "postcss-html": "^1.5.0",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-config-standard-vue": "^1.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
 }
