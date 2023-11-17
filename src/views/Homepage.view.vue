@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <h1>Homepage</h1>
-  </section>
+    <section>
+        <h1>Homepage</h1>
+    </section>
 </template>
 
 <script>

@@ -6,13 +6,13 @@ const routes = [
         name: 'home',
         component: function () {
             return import(/* webpackChunkName: "Homepage" */ '../views/Homepage.view.vue');
-        }
+        },
     },
 ];
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
-    routes
+    routes,
 });
 
 export default router;
